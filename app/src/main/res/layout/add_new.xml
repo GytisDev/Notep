@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#fffba0">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/title_add_new"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/input_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.04"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        android:maxLength="40"/>
+
+    <EditText
+        android:id="@+id/input_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="15"
+        android:lines="15"
+        android:maxLines="16"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Note"
+        android:inputType="textMultiLine"
+        android:textAlignment="inherit" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick_buttonSave"
+        android:background="#f4df42"
+        android:text="Add note" />
+
+</LinearLayout>

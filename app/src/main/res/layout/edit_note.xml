@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#fffba0">
+
+    <TextView
+        android:id="@+id/text_titleEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/edit_note"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/input_noteTitleEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.04"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        android:maxLength="50"/>
+
+    <EditText
+        android:id="@+id/input_noteEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="15"
+        android:lines="15"
+        android:maxLines="16"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Note"
+        android:inputType="textMultiLine"
+        android:textAlignment="inherit" />
+
+    <Button
+        android:id="@+id/button_saveEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4df42"
+        android:onClick="onClick_saveEdit"
+        android:text="Save changes" />
+
+    <Button
+        android:id="@+id/button_deleteEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#f4df42"
+        android:onClick="onClick_deleteNote"
+        android:text="Remove note" />
+
+</LinearLayout>
